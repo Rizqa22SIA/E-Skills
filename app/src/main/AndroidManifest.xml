@@ -34,6 +34,8 @@
         <activity android:name=".video_berhasil_ditambahkan"/>
         <activity android:name=".kelas_saya"/>
         <activity android:name=".video"/>
+        <activity android:name=".profil"></activity>
+
     </application>
 
 </manifest>
