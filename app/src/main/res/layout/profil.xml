@@ -17,19 +17,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Profile"
+        android:layout_marginTop="16dp"
         android:fontFamily="@font/poppins_semibold"
+        android:gravity="center_horizontal"
+        android:text="Profile"
         android:textColor="@color/brokenWhite"
         android:textSize="20sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="30dp"
-        />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/profile_image"
@@ -46,13 +49,14 @@
         android:id="@+id/edit_photo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ubah foto"
-        android:fontFamily="@font/poppins_medium"
-        android:textSize="12dp"
         android:layout_marginTop="1dp"
-        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        android:fontFamily="@font/poppins_medium"
+        android:text="Ubah foto"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/profile_image" />
 
     <EditText
         android:id="@+id/name"
@@ -93,6 +97,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Tanggal Lahir"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
         android:textSize="14sp"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/email"
@@ -103,19 +109,25 @@
         android:id="@+id/status_label"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="Status"
-        android:textSize="14sp"
         android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/email"
+        android:layout_marginEnd="148dp"
+        android:text="Status"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="16dp" />
+        app:layout_constraintTop_toBottomOf="@id/email" />
 
     <TextView
         android:id="@+id/tanggal_lahir"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="20 Januari 2003"
+        android:background="@drawable/rectangle394"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
         android:textSize="14sp"
+        android:gravity="center"
         app:layout_constraintTop_toBottomOf="@id/tanggal_lahir_label"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp" />
@@ -125,6 +137,10 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Mahasiswa"
+        android:background="@drawable/rectangle394"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppins_regular"
+        android:gravity="center"
         android:textSize="14sp"
         app:layout_constraintTop_toBottomOf="@id/status_label"
         app:layout_constraintEnd_toEndOf="parent"
@@ -135,6 +151,8 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Riwayat Kelas"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
         android:textSize="14sp"
         android:layout_marginTop="16dp"
         app:layout_constraintTop_toBottomOf="@id/tanggal_lahir"
@@ -146,18 +164,25 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Sertifikat"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
         android:textSize="14sp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="123dp"
         app:layout_constraintTop_toBottomOf="@id/status"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginEnd="16dp" />
+       />
 
     <TextView
         android:id="@+id/riwayat_kelas"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
         android:text="2 Kelas Selesai"
-        android:textSize="14sp"
+        android:background="@drawable/rectangle396"
+        android:gravity="center"
+        android:textSize="16sp"
         app:layout_constraintTop_toBottomOf="@id/riwayat_kelas_label"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginStart="16dp" />
@@ -166,8 +191,12 @@
         android:id="@+id/sertifikat"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="@color/black"
         android:text="2 Sertifikat"
-        android:textSize="14sp"
+        android:background="@drawable/rectangle396"
+        android:gravity="center"
+        android:textSize="16dp"
         app:layout_constraintTop_toBottomOf="@id/sertifikat_label"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginEnd="16dp" />
