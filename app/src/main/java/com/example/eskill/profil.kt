@@ -20,12 +20,17 @@ class ProfileActivity : AppCompatActivity() {
                     startActivity(intent)
                     true
                 }
+
                 R.id.navigation_profile -> {
                     // Handle navigation to "Profile" screen
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
                     true
                 }
+
                 else -> false
             }
         }
     }
 }
+
